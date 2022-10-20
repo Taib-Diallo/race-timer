@@ -21,6 +21,13 @@ function Configuration(props) {
         value={props.numPlayers}
         onChange={(e) => props.setNumContestants(e.target.value)}
       />
+       <br />
+      <label>Name of Contestants:</label>
+      <input
+        type="text"
+        value={props.contestName}
+        onChange={(e) => props.setContestName(e.target.value)}
+      />
       <button onClick={handleStart}>Start the Timer!</button>
     </div>
   );
